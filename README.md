@@ -29,12 +29,8 @@ In order to achieve this at the technical level, we create a streaming data pipe
 
 ## 1-Configuring the Sensor Logger Application on your phone
 ** The Accelerometer parameter**
-
 ![config](https://github.com/hafsaelgha/Real-Time-Data-Pipeline-on-AWS-/assets/99973359/a77e784c-0849-455f-bfb4-b326e27fc415)
-
 **Enable the HTTP Push**
-
-
 The **Push URL** was modified after creating the API Gateway Route
 
 ## 2-API Gateway 
