@@ -29,16 +29,16 @@ In order to achieve this at the technical level, we create a streaming data pipe
 
 ## 1-Configuring the Sensor Logger Application on your phone
 ** The Accelerometer parameter**
-![config](https://github.com/hafsaelgha/Real-Time-Data-Pipeline-on-AWS-/assets/99973359/a77e784c-0849-455f-bfb4-b326e27fc415)
 **Enable the HTTP Push**
+
 The **Push URL** was modified after creating the API Gateway Route
+![config](https://github.com/hafsaelgha/Real-Time-Data-Pipeline-on-AWS-/assets/99973359/a77e784c-0849-455f-bfb4-b326e27fc415)
 
 ## 2-API Gateway 
 We create an API endpoint and save the invoke URL, then we create a POST Route and integrate it with lambda funtcion
 
 ![3](https://github.com/hafsaelgha/Real-Time-Data-Pipeline-on-AWS-/assets/99973359/415065cf-1ab6-4c75-ba5b-75e5b1637fdd)
 ![1](https://github.com/hafsaelgha/Real-Time-Data-Pipeline-on-AWS-/assets/99973359/bfb8a6ba-aaa3-4739-8648-f8172a706bd5)
-![2](https://github.com/hafsaelgha/Real-Time-Data-Pipeline-on-AWS-/assets/99973359/d87cd7c9-5ede-47ca-9a5c-e9cc1def82b1)
 this will publish the event captured from the Sensor Logger app.
 
 ## 3-Lambda Function for producer
