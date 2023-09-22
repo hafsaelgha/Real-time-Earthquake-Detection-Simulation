@@ -14,10 +14,15 @@ In order to achieve this at the technical level, we create a streaming data pipe
 
 ## Comments 
 1-Sensor Logger : is definetly our data source, we gonna focus on the **Inertial sensor**, on the **Accelerometer** parameter.
+
 2-API Gateway : It serves as a gateway for your backend services, allowing you to expose them as APIs to be accessed by clients such as web and mobile applications.
+
 3-Lambda function : In our use case, lmabda function publish messages received from API Gateway to Kafka Consumer.
+
 4-Layer : It's a .zip file archive that contains supplementary code or data. Layers usually contain library dependencies, a custom runtime, or configuration files. we use it here to reduce the size of your deployment packages. (kafka)
+
 5-EC2 Instance : we will deploy our Kafka cluster here.
+
 6-Apache Kafka : it's a streaming framework used to simpliy the real time data stream pipeline by using his architecture based on : Producer, Topics,Messages, Consumer.
 
 # Steps and Remarks 
