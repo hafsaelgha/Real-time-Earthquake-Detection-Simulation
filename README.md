@@ -29,7 +29,9 @@ In order to achieve this at the technical level, we create a streaming data pipe
 
 ## 1-Configuring the Sensor Logger Application on your phone
 ** The Accelerometer parameter**
-![config 1](https://github.com/hafsaelgha/Real-Time-Data-Pipeline-on-AWS-/assets/99973359/55aa693d-9adc-4bdf-99d8-bd88438e9605)
+
+![config](https://github.com/hafsaelgha/Real-Time-Data-Pipeline-on-AWS-/assets/99973359/a77e784c-0849-455f-bfb4-b326e27fc415)
+
 
 **Enable the HTTP Push**
 ![config 2](https://github.com/hafsaelgha/Real-Time-Data-Pipeline-on-AWS-/assets/99973359/1a320af0-22fa-49e6-b307-76165c322cc3)
@@ -60,10 +62,16 @@ Launching an EC2 instance with this configuration :
 
 ## 5-Kafka on EC2 
 Installation requirement : 
+
 1-install kafka_2.13-3.4.1
+
 2-install java-1.8.0-openjdk
+
 3-starting the zookeeper
-4-modifiying the server.properties file on the "advertised_listeners" variable by adding our IPv4 adress.![8](https://github.com/hafsaelgha/Real-Time-Data-Pipeline-on-AWS-/assets/99973359/c64f3b78-b485-49f0-9fac-4f1fc2ea7349)
+
+4-modifiying the server.properties file on the "advertised_listeners" variable by adding our IPv4 adress.
+
+![8](https://github.com/hafsaelgha/Real-Time-Data-Pipeline-on-AWS-/assets/99973359/c64f3b78-b485-49f0-9fac-4f1fc2ea7349)
 
 ### Creating the topic 
 
