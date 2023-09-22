@@ -33,7 +33,6 @@ In order to achieve this at the technical level, we create a streaming data pipe
 
 The **Push URL** was modified after creating the API Gateway Route
 ![config](https://github.com/hafsaelgha/Real-Time-Data-Pipeline-on-AWS-/assets/99973359/a77e784c-0849-455f-bfb4-b326e27fc415)
-
 ## 2-API Gateway 
 We create an API endpoint and save the invoke URL, then we create a POST Route and integrate it with lambda funtcion
 
@@ -52,8 +51,7 @@ This lambda function receive the JSON file from the Sensor Logger app and extrac
 
 ## 4-EC2 instance configuration
 Launching an EC2 instance with this configuration : 
-
-![7](https://github.com/hafsaelgha/Real-Time-Data-Pipeline-on-AWS-/assets/99973359/2a9bd392-8083-4361-94c3-f6c30ed757c1)
+![1](https://github.com/hafsaelgha/Real-Time-Data-Pipeline-on-AWS-/assets/99973359/6d9d1a76-747a-4f97-a0e9-4c4a617539cc)
 
 ## 5-Kafka on EC2 
 Installation requirement : 
@@ -61,18 +59,24 @@ Installation requirement :
 1-install kafka_2.13-3.4.1
 
 2-install java-1.8.0-openjdk
+![2](https://github.com/hafsaelgha/Real-Time-Data-Pipeline-on-AWS-/assets/99973359/56335dda-e203-4803-b407-798b88020ee9)
+
 
 3-starting the zookeeper
+![3](https://github.com/hafsaelgha/Real-Time-Data-Pipeline-on-AWS-/assets/99973359/41a590d5-b538-45e2-98a2-3df54c27f1a5)
+
 
 4-modifiying the server.properties file on the "advertised_listeners" variable by adding our IPv4 adress.
+![5](https://github.com/hafsaelgha/Real-Time-Data-Pipeline-on-AWS-/assets/99973359/c837deaf-f015-4ce1-bcd7-95dcb7198409)
 
-![8](https://github.com/hafsaelgha/Real-Time-Data-Pipeline-on-AWS-/assets/99973359/c64f3b78-b485-49f0-9fac-4f1fc2ea7349)
 
 ### Creating the topic 
 
-![10](https://github.com/hafsaelgha/Real-Time-Data-Pipeline-on-AWS-/assets/99973359/190e04a3-f1c2-4745-a02d-364a0d2a3ff2)
+![6](https://github.com/hafsaelgha/Real-Time-Data-Pipeline-on-AWS-/assets/99973359/6d911e00-a326-41b3-944f-b0f657cd08b3)
 
 ### Start Kafka Consumer 
+![7](https://github.com/hafsaelgha/Real-Time-Data-Pipeline-on-AWS-/assets/99973359/07789ff8-3a52-49fe-9b56-de0563d72eac)
+
 
 
 
