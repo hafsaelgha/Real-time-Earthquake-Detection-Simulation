@@ -32,9 +32,8 @@ In order to achieve this at the technical level, we create a streaming data pipe
 
 ![config](https://github.com/hafsaelgha/Real-Time-Data-Pipeline-on-AWS-/assets/99973359/a77e784c-0849-455f-bfb4-b326e27fc415)
 
-
 **Enable the HTTP Push**
-![config 2](https://github.com/hafsaelgha/Real-Time-Data-Pipeline-on-AWS-/assets/99973359/1a320af0-22fa-49e6-b307-76165c322cc3)
+
 
 The **Push URL** was modified after creating the API Gateway Route
 
