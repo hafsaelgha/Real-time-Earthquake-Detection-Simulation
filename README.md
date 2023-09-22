@@ -67,8 +67,6 @@ Installation requirement :
 
 
 4-modifiying the server.properties file on the "advertised_listeners" variable by adding our IPv4 adress.
-![5](https://github.com/hafsaelgha/Real-Time-Data-Pipeline-on-AWS-/assets/99973359/c837deaf-f015-4ce1-bcd7-95dcb7198409)
-
 
 ### Creating the topic 
 
