@@ -1,0 +1,39 @@
+--install kafka--
+wget https://dlcdn.apache.org/kafka/3.4.1/kafka_2.13-3.4.1.tgz
+tar -xvf kafka_2.13-3.4.1.tgz
+--To install Java --
+----------------------------------------
+java -version
+sudo yum install java-1.8.0-openjdk
+java -version
+cd kafka_2.13-3.4.1
+bin/zookeeper-server-start.sh config/zookeeper.properties
+
+export KAFKA_HEAP_OPTS="-Xmx256M -Xms128M"
+cd kafka_2.13-3.4.1
+bin/kafka-server-start.sh config/server.properties
+
+--Start Kafka-server:
+----------------------------------------
+Duplicate the session & enter in a new console --
+
+
+It is pointing to private server , change server.properties so that it can run in public IP 
+
+To do this , you can follow any of the 2 approaches shared belwo --
+1)Do a vi config/server.properties in insert mode -- change ADVERTISED_LISTENERS to public ip of the EC2 instance
+2)You can modify the file using Winscp also
+
+--To create topic:
+------------------
+cd kafka_2.13-3.4.1
+bin/kafka-topics.sh --create --topic sensor_consumer --bootstrap-server 54.236.30.59:9092 --replication-factor 1 --partitions 1 
+
+--Start Kafka Console Consumer:
+--------------------------------------
+bin/kafka-console-consumer.sh --topic sensor_consumer --bootstrap-server 54.236.30.59:9092
+
+API path : 
+https://2i6plt8d06.execute-api.us-east-1.amazonaws.com/publishtokafka
+
+C:\Users\Leno\AppData\Local\Microsoft\WindowsApps\python3.10.exe c:/Users/Leno/Desktop/RT-streaming/consumer.py
