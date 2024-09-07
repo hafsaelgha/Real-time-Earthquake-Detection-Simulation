@@ -21,4 +21,5 @@ for message in consumer:
     tp=TopicPartition(message.topic,message.partition)
     om = OffsetAndMetadata(message.offset+1, message.timestamp)
     consumer.commit({tp:om})
-    
+
+#changes to test
